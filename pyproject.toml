@@ -1,0 +1,24 @@
+[project]
+name = "retail-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "certifi>=2025.8.3",
+    "dagster>=1.11.6",
+    "dagster-duckdb>=0.27.6",
+    "dagster-webserver>=1.11.6",
+    "duckdb>=1.3.2",
+    "numpy>=2.3.2",
+    "pandas>=2.3.2",
+    "plotly>=6.3.0",
+    "psycopg2-binary>=2.9.10",
+]
+
+
+
+[tool.dagster]
+
+module_name = "definitions"
+code_location_name = "Retail_project"

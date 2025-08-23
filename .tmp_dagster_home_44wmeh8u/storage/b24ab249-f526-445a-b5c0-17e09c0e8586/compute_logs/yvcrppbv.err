@@ -1,0 +1,7 @@
+[32m2025-08-23 20:28:22 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - LOGS_CAPTURED - Started capturing logs in process (pid: 7457).
+[32m2025-08-23 20:28:22 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - data_ingestion - STEP_START - Started execution of step "data_ingestion".
+[32m2025-08-23 20:28:45 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - data_ingestion - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2025-08-23 20:28:45 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - data_ingestion - Writing file at: /Users/djibril/Documents/Projects/Data_Orchestration_projects/Batch_ Orchestration/Retail_project/.tmp_dagster_home_44wmeh8u/storage/data_ingestion using PickledObjectFilesystemIOManager...
+[32m2025-08-23 20:28:46 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - data_ingestion - ASSET_MATERIALIZATION - Materialized value data_ingestion.
+[32m2025-08-23 20:28:46 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - data_ingestion - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-08-23 20:28:46 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b24ab249-f526-445a-b5c0-17e09c0e8586 - 7457 - data_ingestion - STEP_SUCCESS - Finished execution of step "data_ingestion" in 23.88s.

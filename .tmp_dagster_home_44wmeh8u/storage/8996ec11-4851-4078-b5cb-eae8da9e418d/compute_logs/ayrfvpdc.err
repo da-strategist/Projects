@@ -1,0 +1,20 @@
+[32m2025-08-23 20:24:44 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8996ec11-4851-4078-b5cb-eae8da9e418d - 6611 - LOGS_CAPTURED - Started capturing logs in process (pid: 6611).
+[32m2025-08-23 20:24:44 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8996ec11-4851-4078-b5cb-eae8da9e418d - 6611 - data_ingestion - STEP_START - Started execution of step "data_ingestion".
+[32m2025-08-23 20:25:07 +0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8996ec11-4851-4078-b5cb-eae8da9e418d - 6611 - data_ingestion - STEP_OUTPUT - Yielded output "result" of type "DataFrame". Warning! Type check failed.
+[32m2025-08-23 20:25:07 +0300[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 8996ec11-4851-4078-b5cb-eae8da9e418d - 6611 - data_ingestion - STEP_FAILURE - Execution of step "data_ingestion" failed.
+
+dagster._core.errors.DagsterTypeCheckDidNotPass: Type check failed for step output "result" - expected type "DataFrame". Description: Value of type <class 'NoneType'> failed type check for Dagster type DataFrame, expected value to be of Python type pandas.core.frame.DataFrame.
+
+Stack Trace:
+  File "/Users/djibril/Documents/Projects/Data_Orchestration_projects/Batch_ Orchestration/Retail_project/.venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_plan.py", line 246, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/Users/djibril/Documents/Projects/Data_Orchestration_projects/Batch_ Orchestration/Retail_project/.venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 511, in core_dagster_event_sequence_for_step
+    for evt in _type_check_and_store_output(step_context, user_event):
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/djibril/Documents/Projects/Data_Orchestration_projects/Batch_ Orchestration/Retail_project/.venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 575, in _type_check_and_store_output
+    yield from _type_check_output(step_context, step_output_handle, output)
+  File "/Users/djibril/Documents/Projects/Data_Orchestration_projects/Batch_ Orchestration/Retail_project/.venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 426, in _type_check_output
+    raise DagsterTypeCheckDidNotPass(
+    ...<7 lines>...
+    )
+[0m
