@@ -27,7 +27,7 @@ def transform_data(context, data_ingestion) -> None:
 def transformed_data(database: DuckDBResource) -> None:
     query = """
         CREATE OR REPLACE TABLE processed_retail_data AS
-        SELECT * FROM retail_raw
+        SELECT * FROM './data/raw/retail_raw.csv'
     """
     with database.get_connection() as conn:
         conn.execute(query)
