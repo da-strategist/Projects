@@ -16,4 +16,3 @@ def data_ingestion() -> pd.DataFrame:
 
     return retail_raw
 
-
